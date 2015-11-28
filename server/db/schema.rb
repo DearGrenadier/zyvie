@@ -31,17 +31,17 @@ ActiveRecord::Schema.define(version: 20151128064013) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "quizzes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "quizzes_questions", force: :cascade do |t|
+  create_table "questions_quizzes", force: :cascade do |t|
     t.integer "quiz_id"
     t.integer "question_id"
   end
 
-  add_index "quizzes_questions", ["question_id"], name: "index_quizzes_questions_on_question_id", using: :btree
-  add_index "quizzes_questions", ["quiz_id"], name: "index_quizzes_questions_on_quiz_id", using: :btree
+  add_index "questions_quizzes", ["question_id"], name: "index_questions_quizzes_on_question_id", using: :btree
+  add_index "questions_quizzes", ["quiz_id"], name: "index_questions_quizzes_on_quiz_id", using: :btree
+
+  create_table "quizzes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

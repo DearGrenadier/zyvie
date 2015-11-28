@@ -5,7 +5,7 @@ class CreateQuizzes < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    create_table :quizzes_questions do |t|
+    create_table :questions_quizzes do |t|
       t.belongs_to :quiz, index: true
       t.belongs_to :question, index: true
     end

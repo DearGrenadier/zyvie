@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :questions, only: [:create]
+  get 'quizzes/general'
 end

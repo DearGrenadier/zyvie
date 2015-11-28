@@ -1,0 +1,2 @@
+module QizzesHelper
+end
