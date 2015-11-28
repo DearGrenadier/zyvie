@@ -1,0 +1,66 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:RestfulApplication.Universal"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:Core="using:RestfulApplication.Clients.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+      x:Class="RestfulApplication.Universal.MainPage"
+      mc:Ignorable="d"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <DataTemplate x:Key="EmployeeDataTemplate">
+            <StackPanel Margin="12,12,12,0"
+                        Background="Teal"
+                        Width="376"
+                        DataContext="{Binding}">
+                <TextBlock Text="{Binding FullName}"
+                           FontSize="24"
+                           Margin="12" />
+                <TextBlock Text="{Binding Department}"
+                           FontSize="18.667"
+                           HorizontalAlignment="Right"
+                           Opacity="0.6"
+                           Margin="12,0,12,12" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Refresh"
+                          Label="refresh"
+                          Command="{Binding RefreshCommand}" />
+                <AppBarButton Icon="Add"
+                              Label="add"
+                              Command="{Binding RefreshCommand}" >
+                	<Interactivity:Interaction.Behaviors>
+                		<core:EventTriggerBehavior EventName="Click">
+                			<core:NavigateToPageAction TargetPage="RestfulApplication.Universal.DetailsPage"/>
+                		</core:EventTriggerBehavior>
+                	</Interactivity:Interaction.Behaviors>
+                </AppBarButton>
+            </CommandBar>
+    </Page.BottomAppBar>
+
+    <Page.DataContext>
+        <Core:MainViewModel />
+    </Page.DataContext>
+
+    <Grid>
+        <ListView x:Name="listView"
+                  ItemsSource="{Binding EmployeesList}"
+                  ItemTemplate="{StaticResource EmployeeDataTemplate}">
+            <Interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="SelectionChanged">
+                    <core:NavigateToPageAction TargetPage="RestfulApplication.Universal.DetailsPage" />
+                    <core:InvokeCommandAction Command="{Binding SendEmployeeMessageCommand}"
+                                              CommandParameter="{Binding SelectedItem, ElementName=listView}" />
+                </core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </ListView>
+    </Grid>
+
+</Page>

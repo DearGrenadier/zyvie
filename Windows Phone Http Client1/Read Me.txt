@@ -1,0 +1,25 @@
+﻿This project connects to an ASP.NET Web API. You can create one manually: 
+http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
+
+You will need the following model class:
+ public class Employee
+    {
+
+        public int Id
+        {
+            get;
+            set;
+        }
+
+        public string FullName
+        {
+            get;
+            set;
+        }
+
+        public string Department
+        {
+            get;
+            set;
+        }
+    }

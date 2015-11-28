@@ -1,0 +1,13 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\demom_000\codes\windows phone http client1\windows phone http client1\obj\debug\intermediatexaml\windows phone http client1.exe" HashGuid="52978983-3d31-8912-93db-b3fb46124de2" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\portable.mvvmlightlibs.4.3.31.2\lib\wpa81\galasoft.mvvmlight.dll" HashGuid="77fb4b2e-8ec5-88d5-d8e7-768d248c7bbc" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\portable.mvvmlightlibs.4.3.31.2\lib\wpa81\galasoft.mvvmlight.extras.dll" HashGuid="28bb2089-c7a4-73bb-7a72-1ea8b02698b0" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\portable.mvvmlightlibs.4.3.31.2\lib\wpa81\galasoft.mvvmlight.platform.dll" HashGuid="c769c228-b45f-ca29-24b7-7495dae962ed" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\portable.mvvmlightlibs.4.3.31.2\lib\wpa81\microsoft.practices.servicelocation.dll" HashGuid="89de7f80-26d8-a17c-5ad9-b855f81ea5b2" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\newtonsoft.json.6.0.4\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="02b12ba6-881e-6b8a-1687-5b2ee1851a11" />
+    <ReferenceAssembly PathName="c:\users\demom_000\codes\windows phone http client1\packages\microsoft.net.http.2.2.20\lib\wpa81\system.net.http.extensions.dll" HashGuid="1d9d21be-6daa-468f-1b93-4e738d786e1b" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
