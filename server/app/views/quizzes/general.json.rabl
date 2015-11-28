@@ -1,9 +1,11 @@
-object: :@quiz
+object @quiz
 attributes :id
-child(:questions) do
+child(:questions, :object_root => false) do
   attributes :id, :title
-  child(:answers) do
-    attributes :id, :body, :right
+  child(:avatar, root: "img", :object_root => false) do
+    attributes :url
   end
+  child(:answers, :object_root => false) do
+    attributes :id, :body, :right
   end
 end

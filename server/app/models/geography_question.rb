@@ -1,0 +1,2 @@
+class GeographyQuestion < Question
+end

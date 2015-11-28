@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_ios_rails_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -54,6 +55,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  Question.subclasses.each do |subclass|
+    method = subclass.underscore.split(/_/).first + "_quiz"
+    get 'quizzes/' << method
+  end
   resources :questions, only: [:create]
   get 'quizzes/general'
+  post 'quizzes/result'
+  get 'questions/statistic'
 end

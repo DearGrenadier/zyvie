@@ -1,0 +1,2 @@
+class OutstandingPeopleQuestion < Question
+end
