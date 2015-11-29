@@ -1,2 +1,0 @@
-class SportQuestion < Question
-end

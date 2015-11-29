@@ -1,2 +1,0 @@
-class LiteratureQuestion < Question
-end

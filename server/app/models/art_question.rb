@@ -1,2 +1,0 @@
-class ArtQuestion < Question
-end

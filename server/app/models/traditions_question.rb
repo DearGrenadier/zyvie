@@ -1,2 +1,0 @@
-class TraditionsQuestion < Question
-end

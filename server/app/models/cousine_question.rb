@@ -1,2 +1,0 @@
-class CousineQuestion < Question
-end

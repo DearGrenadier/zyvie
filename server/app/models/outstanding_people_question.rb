@@ -1,2 +1,0 @@
-class OutstandingPeopleQuestion < Question
-end

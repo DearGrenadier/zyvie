@@ -1,2 +1,0 @@
-class NatureQuestion < Question
-end
