@@ -1,0 +1,2 @@
+class SportQuestion < Question
+end

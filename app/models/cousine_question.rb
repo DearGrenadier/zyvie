@@ -1,0 +1,2 @@
+class CousineQuestion < Question
+end
