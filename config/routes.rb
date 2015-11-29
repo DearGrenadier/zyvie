@@ -63,5 +63,5 @@ Rails.application.routes.draw do
   get 'quizzes/general'
   post 'quizzes/result'
   get 'questions/statistic'
-  root to: 'quizzes#general'
+  root to: 'rails_admin/main#dashboard'
 end
