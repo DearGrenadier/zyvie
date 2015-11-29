@@ -53,7 +53,7 @@ group :development do
 end
 
 gem 'devise'
-gem 'devise-ios-rails',  '~> 1.0.0'
+# gem 'devise-ios-rails',  '~> 1.0.0'
 gem 'simple_token_authentication' , '~> 1.8.0'
 gem 'rabl'
 gem 'rails_admin'
