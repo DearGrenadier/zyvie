@@ -19,7 +19,7 @@ class Quiz < ActiveRecord::Base
   class << self
     def generate_general_quiz
       questions = []
-      while questions.size != 6 do
+      while questions.size != 10 do
         question = Question.subclasses.sample.constantize.where.not(id: questions.map(&:id)).order("random()").limit(1).first
         next unless question
         question.answers.order('random()')

@@ -15,7 +15,7 @@ set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
 
 set :unicorn_config_path, -> { "#{fetch(:deploy_to)}/current/config/unicorn.rb" }
 
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle}
 
